@@ -20,4 +20,14 @@ df = pd.read_csv("ulabox.csv")
 print(df.describe())
 
 
+# %% 
+# Realizar gráfico de caja
+plt.figure(figsize=(10, 4))
+seaborn.boxplot(x="total_items",
+                data=df,
+                showmeans=True,
+                meanprops={"marker":"o",
+                       "markerfacecolor":"white", 
+                       "markeredgecolor":"black",
+                      "markersize":"10"})
 # %%
