@@ -16,3 +16,5 @@ df = pd.read_csv("ulabox.csv")
 # print(df.max())
 
 print(df.describe())
+
+
